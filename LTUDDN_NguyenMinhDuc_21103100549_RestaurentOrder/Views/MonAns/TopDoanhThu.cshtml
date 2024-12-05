@@ -1,39 +1,30 @@
-﻿
+﻿@model LTUDDN_NguyenMinhDuc_21103100549_RestaurentOrder.Models.MonAn
+
 @{
-    ViewBag.Title = "TopDoanhThu";
+    ViewBag.Title = "Top Doanh Thu";
 }
 
-<h2>Món ăn có tổng doanh thu cao nhất</h2>
+<h2>Món Ăn Có Doanh Thu Cao Nhất</h2>
 
 <table class="table">
-    <thead>
-        <tr>
-            <th>Mã Món</th>
-            <th>Tên Món</th>
-            <th>Loại Món</th>
-            <th>Đơn Giá</th>
-            <th>Số Lượng Tồn</th>
-            <th>Tổng Doanh Thu</th>
-        </tr>
-    </thead>
-    <tbody>
-        @if (Model != null)
-        {
-        <tr>
-            <td>@Model.MonAn.MaMon</td> 
-            <td>@Model.MonAn.TenMon</td> 
-            <td>@Model.MonAn.LoaiMon</td> 
-            <td>@Model.MonAn.DonGia.ToString("C0")</td> 
-            <td>@Model.MonAn.SoLuongTon</td> 
-            <td>@Model.TongDoanhThu.ToString("C0")</td> 
-        </tr>
-        }
-        else
-        {
-        <tr>
-            <td colspan="6" class="text-center">Không có dữ liệu</td>
-        </tr>
-        }
-    </tbody>
+    <tr>
+        <th>Mã Món</th>
+        <th>Tên Món</th>
+        <th>Loại Món</th>
+        <th>Đơn Giá</th>
+        <th>Số Lượng Tồn</th>
+        <th>Tổng Doanh Thu</th>
+    </tr>
+    <tr>
+        <td>@Model.MaMon</td>
+        <td>@Model.TenMon</td>
+        <td>@Model.LoaiMon</td>
+        <td>@Model.DonGia</td>
+        <td>@Model.SoLuongTon</td>
+        <td>@ViewBag.TongDoanhThu</td>
+    </tr>
 </table>
 
+<p>
+    @Html.ActionLink("Quay lại danh sách", "Index", null, new { @class = "btn btn-primary" })
+</p>

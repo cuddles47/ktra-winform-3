@@ -123,22 +123,28 @@ namespace LTUDDN_NguyenMinhDuc_21103100549_RestaurentOrder.Controllers
             }
             base.Dispose(disposing);
         }
-
         public ActionResult TopDoanhThu()
         {
-            var topMonAn = db.MonAns
+            var topDish = db.MonAns
                 .Select(mon => new
                 {
-                    MonAn = mon,
-                    TongDoanhThu = db.HoaDonDatMons
-                        .Where(hd => hd.MaMon == mon.MaMon)
-                        .Sum(hd => hd.SoLuong * mon.DonGia)
+                    MonAn = mon, 
+                    ThanhTien = db.HoaDonDatMons
+                                     .Where(hd => hd.MaMon == mon.MaMon) 
+                                     .Sum(hd => (decimal?)hd.SoLuong * mon.DonGia) ?? 0 
                 })
-                .OrderByDescending(x => x.TongDoanhThu)
-                .FirstOrDefault();
+                .OrderByDescending(x => x.ThanhTien) 
+                .FirstOrDefault(); 
 
-            return View(topMonAn);
+            
+            if (topDish == null)
+            {
+                return HttpNotFound("Không có món ăn hoặc hóa đơn nào.");
+            }
+
+            
+            ViewBag.ThanhTien = topDish.ThanhTien;
+            return View(topDish.MonAn);
         }
-
     }
 }

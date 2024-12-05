@@ -7,7 +7,8 @@
 <h2>Index</h2>
 
 <p>
-    @Html.ActionLink("Create New", "Create")
+    @Html.ActionLink("Top Doanh Thu", "TopDoanhThu", null, new { @class = "btn btn-primary" }) |
+    @Html.ActionLink("Create New", "Create", null, new { @class = "btn btn-success" })
 </p>
 <table class="table">
     <tr>
@@ -16,7 +17,7 @@
         <th>Loại Món</th>
         <th>Đơn Giá</th>
         <th>Số Lượng Tồn</th>
-        <th>Hành Động</th>
+        <th>Tính Năng</th>
     </tr>
 
 @foreach (var item in Model) {

@@ -30,5 +30,7 @@ namespace LTUDDN_NguyenMinhDuc_21103100549_RestaurentOrder.Models
         public Nullable<int> SoLuong { get; set; }
     
         public virtual MonAn MonAn { get; set; }
+        public decimal TongDoanhThu { get; set; } // Ensure this property exists
+
     }
 }

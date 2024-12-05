@@ -1,0 +1,251 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\project\\LTUDDN_NguyenMinhDuc_21103100549_RestaurentOrder\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{6BDAD3E7-5713-49FE-862B-B7E427936779}|LTUDDN_NguyenMinhDuc_21103100549_RestaurentOrder\\LTUDDN_NguyenMinhDuc_21103100549_RestaurentOrder.csproj|d:\\project\\ltuddn_nguyenminhduc_21103100549_restaurentorder\\ltuddn_nguyenminhduc_21103100549_restaurentorder\\controllers\\monanscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6BDAD3E7-5713-49FE-862B-B7E427936779}|LTUDDN_NguyenMinhDuc_21103100549_RestaurentOrder\\LTUDDN_NguyenMinhDuc_21103100549_RestaurentOrder.csproj|solutionrelative:ltuddn_nguyenminhduc_21103100549_restaurentorder\\controllers\\monanscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6BDAD3E7-5713-49FE-862B-B7E427936779}|LTUDDN_NguyenMinhDuc_21103100549_RestaurentOrder\\LTUDDN_NguyenMinhDuc_21103100549_RestaurentOrder.csproj|d:\\project\\ltuddn_nguyenminhduc_21103100549_restaurentorder\\ltuddn_nguyenminhduc_21103100549_restaurentorder\\views\\monans\\topdoanhthu.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6BDAD3E7-5713-49FE-862B-B7E427936779}|LTUDDN_NguyenMinhDuc_21103100549_RestaurentOrder\\LTUDDN_NguyenMinhDuc_21103100549_RestaurentOrder.csproj|solutionrelative:ltuddn_nguyenminhduc_21103100549_restaurentorder\\views\\monans\\topdoanhthu.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6BDAD3E7-5713-49FE-862B-B7E427936779}|LTUDDN_NguyenMinhDuc_21103100549_RestaurentOrder\\LTUDDN_NguyenMinhDuc_21103100549_RestaurentOrder.csproj|d:\\project\\ltuddn_nguyenminhduc_21103100549_restaurentorder\\ltuddn_nguyenminhduc_21103100549_restaurentorder\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6BDAD3E7-5713-49FE-862B-B7E427936779}|LTUDDN_NguyenMinhDuc_21103100549_RestaurentOrder\\LTUDDN_NguyenMinhDuc_21103100549_RestaurentOrder.csproj|solutionrelative:ltuddn_nguyenminhduc_21103100549_restaurentorder\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6BDAD3E7-5713-49FE-862B-B7E427936779}|LTUDDN_NguyenMinhDuc_21103100549_RestaurentOrder\\LTUDDN_NguyenMinhDuc_21103100549_RestaurentOrder.csproj|d:\\project\\ltuddn_nguyenminhduc_21103100549_restaurentorder\\ltuddn_nguyenminhduc_21103100549_restaurentorder\\views\\hoadondatmons\\tophoadon.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6BDAD3E7-5713-49FE-862B-B7E427936779}|LTUDDN_NguyenMinhDuc_21103100549_RestaurentOrder\\LTUDDN_NguyenMinhDuc_21103100549_RestaurentOrder.csproj|solutionrelative:ltuddn_nguyenminhduc_21103100549_restaurentorder\\views\\hoadondatmons\\tophoadon.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6BDAD3E7-5713-49FE-862B-B7E427936779}|LTUDDN_NguyenMinhDuc_21103100549_RestaurentOrder\\LTUDDN_NguyenMinhDuc_21103100549_RestaurentOrder.csproj|d:\\project\\ltuddn_nguyenminhduc_21103100549_restaurentorder\\ltuddn_nguyenminhduc_21103100549_restaurentorder\\controllers\\hoadondatmonscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6BDAD3E7-5713-49FE-862B-B7E427936779}|LTUDDN_NguyenMinhDuc_21103100549_RestaurentOrder\\LTUDDN_NguyenMinhDuc_21103100549_RestaurentOrder.csproj|solutionrelative:ltuddn_nguyenminhduc_21103100549_restaurentorder\\controllers\\hoadondatmonscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/_LocalDB__MSSQLLocalDB/D__PROJECT_LTUDDN_NGUYENMINHDUC_21103100549_RESTAURENTORDER_LTUDDN_NGUYENMINHDUC_21103100549_RESTAURENTORDER_APP_DATA_QLHD.MDF/True/SqlTable/dbo.MonAn.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6BDAD3E7-5713-49FE-862B-B7E427936779}|LTUDDN_NguyenMinhDuc_21103100549_RestaurentOrder\\LTUDDN_NguyenMinhDuc_21103100549_RestaurentOrder.csproj|d:\\project\\ltuddn_nguyenminhduc_21103100549_restaurentorder\\ltuddn_nguyenminhduc_21103100549_restaurentorder\\models\\hoadondatmon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6BDAD3E7-5713-49FE-862B-B7E427936779}|LTUDDN_NguyenMinhDuc_21103100549_RestaurentOrder\\LTUDDN_NguyenMinhDuc_21103100549_RestaurentOrder.csproj|solutionrelative:ltuddn_nguyenminhduc_21103100549_restaurentorder\\models\\hoadondatmon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6BDAD3E7-5713-49FE-862B-B7E427936779}|LTUDDN_NguyenMinhDuc_21103100549_RestaurentOrder\\LTUDDN_NguyenMinhDuc_21103100549_RestaurentOrder.csproj|d:\\project\\ltuddn_nguyenminhduc_21103100549_restaurentorder\\ltuddn_nguyenminhduc_21103100549_restaurentorder\\views\\monans\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6BDAD3E7-5713-49FE-862B-B7E427936779}|LTUDDN_NguyenMinhDuc_21103100549_RestaurentOrder\\LTUDDN_NguyenMinhDuc_21103100549_RestaurentOrder.csproj|solutionrelative:ltuddn_nguyenminhduc_21103100549_restaurentorder\\views\\monans\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6BDAD3E7-5713-49FE-862B-B7E427936779}|LTUDDN_NguyenMinhDuc_21103100549_RestaurentOrder\\LTUDDN_NguyenMinhDuc_21103100549_RestaurentOrder.csproj|d:\\project\\ltuddn_nguyenminhduc_21103100549_restaurentorder\\ltuddn_nguyenminhduc_21103100549_restaurentorder\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6BDAD3E7-5713-49FE-862B-B7E427936779}|LTUDDN_NguyenMinhDuc_21103100549_RestaurentOrder\\LTUDDN_NguyenMinhDuc_21103100549_RestaurentOrder.csproj|solutionrelative:ltuddn_nguyenminhduc_21103100549_restaurentorder\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6BDAD3E7-5713-49FE-862B-B7E427936779}|LTUDDN_NguyenMinhDuc_21103100549_RestaurentOrder\\LTUDDN_NguyenMinhDuc_21103100549_RestaurentOrder.csproj|d:\\project\\ltuddn_nguyenminhduc_21103100549_restaurentorder\\ltuddn_nguyenminhduc_21103100549_restaurentorder\\views\\hoadondatmons\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6BDAD3E7-5713-49FE-862B-B7E427936779}|LTUDDN_NguyenMinhDuc_21103100549_RestaurentOrder\\LTUDDN_NguyenMinhDuc_21103100549_RestaurentOrder.csproj|solutionrelative:ltuddn_nguyenminhduc_21103100549_restaurentorder\\views\\hoadondatmons\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6BDAD3E7-5713-49FE-862B-B7E427936779}|LTUDDN_NguyenMinhDuc_21103100549_RestaurentOrder\\LTUDDN_NguyenMinhDuc_21103100549_RestaurentOrder.csproj|d:\\project\\ltuddn_nguyenminhduc_21103100549_restaurentorder\\ltuddn_nguyenminhduc_21103100549_restaurentorder\\models\\monan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6BDAD3E7-5713-49FE-862B-B7E427936779}|LTUDDN_NguyenMinhDuc_21103100549_RestaurentOrder\\LTUDDN_NguyenMinhDuc_21103100549_RestaurentOrder.csproj|solutionrelative:ltuddn_nguyenminhduc_21103100549_restaurentorder\\models\\monan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6BDAD3E7-5713-49FE-862B-B7E427936779}|LTUDDN_NguyenMinhDuc_21103100549_RestaurentOrder\\LTUDDN_NguyenMinhDuc_21103100549_RestaurentOrder.csproj|d:\\project\\ltuddn_nguyenminhduc_21103100549_restaurentorder\\ltuddn_nguyenminhduc_21103100549_restaurentorder\\views\\hoadondatmons\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6BDAD3E7-5713-49FE-862B-B7E427936779}|LTUDDN_NguyenMinhDuc_21103100549_RestaurentOrder\\LTUDDN_NguyenMinhDuc_21103100549_RestaurentOrder.csproj|solutionrelative:ltuddn_nguyenminhduc_21103100549_restaurentorder\\views\\hoadondatmons\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6BDAD3E7-5713-49FE-862B-B7E427936779}|LTUDDN_NguyenMinhDuc_21103100549_RestaurentOrder\\LTUDDN_NguyenMinhDuc_21103100549_RestaurentOrder.csproj|d:\\project\\ltuddn_nguyenminhduc_21103100549_restaurentorder\\ltuddn_nguyenminhduc_21103100549_restaurentorder\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6BDAD3E7-5713-49FE-862B-B7E427936779}|LTUDDN_NguyenMinhDuc_21103100549_RestaurentOrder\\LTUDDN_NguyenMinhDuc_21103100549_RestaurentOrder.csproj|solutionrelative:ltuddn_nguyenminhduc_21103100549_restaurentorder\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 11,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "TopHoaDon.cshtml",
+              "DocumentMoniker": "D:\\project\\LTUDDN_NguyenMinhDuc_21103100549_RestaurentOrder\\LTUDDN_NguyenMinhDuc_21103100549_RestaurentOrder\\Views\\HoaDonDatMons\\TopHoaDon.cshtml",
+              "RelativeDocumentMoniker": "LTUDDN_NguyenMinhDuc_21103100549_RestaurentOrder\\Views\\HoaDonDatMons\\TopHoaDon.cshtml",
+              "ToolTip": "D:\\project\\LTUDDN_NguyenMinhDuc_21103100549_RestaurentOrder\\LTUDDN_NguyenMinhDuc_21103100549_RestaurentOrder\\Views\\HoaDonDatMons\\TopHoaDon.cshtml",
+              "RelativeToolTip": "LTUDDN_NguyenMinhDuc_21103100549_RestaurentOrder\\Views\\HoaDonDatMons\\TopHoaDon.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAXAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-05T20:50:30.888Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\project\\LTUDDN_NguyenMinhDuc_21103100549_RestaurentOrder\\LTUDDN_NguyenMinhDuc_21103100549_RestaurentOrder\\Views\\HoaDonDatMons\\Index.cshtml",
+              "RelativeDocumentMoniker": "LTUDDN_NguyenMinhDuc_21103100549_RestaurentOrder\\Views\\HoaDonDatMons\\Index.cshtml",
+              "ToolTip": "D:\\project\\LTUDDN_NguyenMinhDuc_21103100549_RestaurentOrder\\LTUDDN_NguyenMinhDuc_21103100549_RestaurentOrder\\Views\\HoaDonDatMons\\Index.cshtml",
+              "RelativeToolTip": "LTUDDN_NguyenMinhDuc_21103100549_RestaurentOrder\\Views\\HoaDonDatMons\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAABWAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-05T18:28:41.191Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "TopDoanhThu.cshtml",
+              "DocumentMoniker": "D:\\project\\LTUDDN_NguyenMinhDuc_21103100549_RestaurentOrder\\LTUDDN_NguyenMinhDuc_21103100549_RestaurentOrder\\Views\\MonAns\\TopDoanhThu.cshtml",
+              "RelativeDocumentMoniker": "LTUDDN_NguyenMinhDuc_21103100549_RestaurentOrder\\Views\\MonAns\\TopDoanhThu.cshtml",
+              "ToolTip": "D:\\project\\LTUDDN_NguyenMinhDuc_21103100549_RestaurentOrder\\LTUDDN_NguyenMinhDuc_21103100549_RestaurentOrder\\Views\\MonAns\\TopDoanhThu.cshtml",
+              "RelativeToolTip": "LTUDDN_NguyenMinhDuc_21103100549_RestaurentOrder\\Views\\MonAns\\TopDoanhThu.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB0AAAAEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-05T19:28:24.871Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "HoaDonDatMon.cs",
+              "DocumentMoniker": "D:\\project\\LTUDDN_NguyenMinhDuc_21103100549_RestaurentOrder\\LTUDDN_NguyenMinhDuc_21103100549_RestaurentOrder\\Models\\HoaDonDatMon.cs",
+              "RelativeDocumentMoniker": "LTUDDN_NguyenMinhDuc_21103100549_RestaurentOrder\\Models\\HoaDonDatMon.cs",
+              "ToolTip": "D:\\project\\LTUDDN_NguyenMinhDuc_21103100549_RestaurentOrder\\LTUDDN_NguyenMinhDuc_21103100549_RestaurentOrder\\Models\\HoaDonDatMon.cs",
+              "RelativeToolTip": "LTUDDN_NguyenMinhDuc_21103100549_RestaurentOrder\\Models\\HoaDonDatMon.cs",
+              "ViewState": "AQIAAAQAAAAAAAAAAAAAwCQAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-05T19:21:12.619Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "MonAn.cs",
+              "DocumentMoniker": "D:\\project\\LTUDDN_NguyenMinhDuc_21103100549_RestaurentOrder\\LTUDDN_NguyenMinhDuc_21103100549_RestaurentOrder\\Models\\MonAn.cs",
+              "RelativeDocumentMoniker": "LTUDDN_NguyenMinhDuc_21103100549_RestaurentOrder\\Models\\MonAn.cs",
+              "ToolTip": "D:\\project\\LTUDDN_NguyenMinhDuc_21103100549_RestaurentOrder\\LTUDDN_NguyenMinhDuc_21103100549_RestaurentOrder\\Models\\MonAn.cs",
+              "RelativeToolTip": "LTUDDN_NguyenMinhDuc_21103100549_RestaurentOrder\\Models\\MonAn.cs",
+              "ViewState": "AQIAABoAAAAAAAAAAAA9wAkAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-05T19:20:46.111Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\project\\LTUDDN_NguyenMinhDuc_21103100549_RestaurentOrder\\LTUDDN_NguyenMinhDuc_21103100549_RestaurentOrder\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "LTUDDN_NguyenMinhDuc_21103100549_RestaurentOrder\\Views\\Home\\Index.cshtml",
+              "ToolTip": "D:\\project\\LTUDDN_NguyenMinhDuc_21103100549_RestaurentOrder\\LTUDDN_NguyenMinhDuc_21103100549_RestaurentOrder\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "LTUDDN_NguyenMinhDuc_21103100549_RestaurentOrder\\Views\\Home\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-05T18:56:10.868Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "D:\\project\\LTUDDN_NguyenMinhDuc_21103100549_RestaurentOrder\\LTUDDN_NguyenMinhDuc_21103100549_RestaurentOrder\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "LTUDDN_NguyenMinhDuc_21103100549_RestaurentOrder\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "D:\\project\\LTUDDN_NguyenMinhDuc_21103100549_RestaurentOrder\\LTUDDN_NguyenMinhDuc_21103100549_RestaurentOrder\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "LTUDDN_NguyenMinhDuc_21103100549_RestaurentOrder\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABkAAABaAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-05T18:46:33.711Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\project\\LTUDDN_NguyenMinhDuc_21103100549_RestaurentOrder\\LTUDDN_NguyenMinhDuc_21103100549_RestaurentOrder\\Views\\MonAns\\Index.cshtml",
+              "RelativeDocumentMoniker": "LTUDDN_NguyenMinhDuc_21103100549_RestaurentOrder\\Views\\MonAns\\Index.cshtml",
+              "ToolTip": "D:\\project\\LTUDDN_NguyenMinhDuc_21103100549_RestaurentOrder\\LTUDDN_NguyenMinhDuc_21103100549_RestaurentOrder\\Views\\MonAns\\Index.cshtml",
+              "RelativeToolTip": "LTUDDN_NguyenMinhDuc_21103100549_RestaurentOrder\\Views\\MonAns\\Index.cshtml",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAAAAoAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-05T18:44:51.63Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "dbo.MonAn [Data]",
+              "DocumentMoniker": "ViewDataWindow_MSSQL__/_LocalDB__MSSQLLocalDB/D__PROJECT_LTUDDN_NGUYENMINHDUC_21103100549_RESTAURENTORDER_LTUDDN_NGUYENMINHDUC_21103100549_RESTAURENTORDER_APP_DATA_QLHD.MDF/True/SqlTable/dbo.MonAn.sql",
+              "ToolTip": "dbo.MonAn [Data]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2024-12-05T18:30:53.028Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "D:\\project\\LTUDDN_NguyenMinhDuc_21103100549_RestaurentOrder\\LTUDDN_NguyenMinhDuc_21103100549_RestaurentOrder\\Views\\HoaDonDatMons\\Create.cshtml",
+              "RelativeDocumentMoniker": "LTUDDN_NguyenMinhDuc_21103100549_RestaurentOrder\\Views\\HoaDonDatMons\\Create.cshtml",
+              "ToolTip": "D:\\project\\LTUDDN_NguyenMinhDuc_21103100549_RestaurentOrder\\LTUDDN_NguyenMinhDuc_21103100549_RestaurentOrder\\Views\\HoaDonDatMons\\Create.cshtml",
+              "RelativeToolTip": "LTUDDN_NguyenMinhDuc_21103100549_RestaurentOrder\\Views\\HoaDonDatMons\\Create.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-05T18:28:44.093Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "HoaDonDatMonsController.cs",
+              "DocumentMoniker": "D:\\project\\LTUDDN_NguyenMinhDuc_21103100549_RestaurentOrder\\LTUDDN_NguyenMinhDuc_21103100549_RestaurentOrder\\Controllers\\HoaDonDatMonsController.cs",
+              "RelativeDocumentMoniker": "LTUDDN_NguyenMinhDuc_21103100549_RestaurentOrder\\Controllers\\HoaDonDatMonsController.cs",
+              "ToolTip": "D:\\project\\LTUDDN_NguyenMinhDuc_21103100549_RestaurentOrder\\LTUDDN_NguyenMinhDuc_21103100549_RestaurentOrder\\Controllers\\HoaDonDatMonsController.cs",
+              "RelativeToolTip": "LTUDDN_NguyenMinhDuc_21103100549_RestaurentOrder\\Controllers\\HoaDonDatMonsController.cs",
+              "ViewState": "AQIAAKMAAAAAAAAAAAAAAKQAAAAjAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-05T18:28:27.124Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MonAnsController.cs",
+              "DocumentMoniker": "D:\\project\\LTUDDN_NguyenMinhDuc_21103100549_RestaurentOrder\\LTUDDN_NguyenMinhDuc_21103100549_RestaurentOrder\\Controllers\\MonAnsController.cs",
+              "RelativeDocumentMoniker": "LTUDDN_NguyenMinhDuc_21103100549_RestaurentOrder\\Controllers\\MonAnsController.cs",
+              "ToolTip": "D:\\project\\LTUDDN_NguyenMinhDuc_21103100549_RestaurentOrder\\LTUDDN_NguyenMinhDuc_21103100549_RestaurentOrder\\Controllers\\MonAnsController.cs",
+              "RelativeToolTip": "LTUDDN_NguyenMinhDuc_21103100549_RestaurentOrder\\Controllers\\MonAnsController.cs",
+              "ViewState": "AQIAAFIAAAAAAAAAAAAAAH0AAAAcAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-05T18:27:59.687Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "D:\\project\\LTUDDN_NguyenMinhDuc_21103100549_RestaurentOrder\\LTUDDN_NguyenMinhDuc_21103100549_RestaurentOrder\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "LTUDDN_NguyenMinhDuc_21103100549_RestaurentOrder\\Controllers\\HomeController.cs",
+              "ToolTip": "D:\\project\\LTUDDN_NguyenMinhDuc_21103100549_RestaurentOrder\\LTUDDN_NguyenMinhDuc_21103100549_RestaurentOrder\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "LTUDDN_NguyenMinhDuc_21103100549_RestaurentOrder\\Controllers\\HomeController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-05T18:27:54.694Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

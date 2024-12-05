@@ -1,11 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Data;
-using System.Data.Entity;
 using System.Linq;
 using System.Net;
-using System.Web;
 using System.Web.Mvc;
+using System.Data.Entity;
 using LTUDDN_NguyenMinhDuc_21103100549_RestaurentOrder.Models;
 
 namespace LTUDDN_NguyenMinhDuc_21103100549_RestaurentOrder.Controllers
@@ -15,10 +12,16 @@ namespace LTUDDN_NguyenMinhDuc_21103100549_RestaurentOrder.Controllers
         private QLHDDataContext db = new QLHDDataContext();
 
         // GET: HoaDonDatMons
-        public ActionResult Index()
+        public ActionResult Index(string searchString)
         {
-            var hoaDonDatMons = db.HoaDonDatMons.Include(h => h.MonAn);
-            return View(hoaDonDatMons.ToList());
+            var hoaDon = db.HoaDonDatMons.Include(h => h.MonAn).AsNoTracking();
+
+            if (!string.IsNullOrEmpty(searchString))
+            {
+                hoaDon = hoaDon.Where(hd => hd.KhachHang.Contains(searchString));
+            }
+
+            return View(hoaDon.ToList());
         }
 
         // GET: HoaDonDatMons/Details/5
@@ -28,11 +31,14 @@ namespace LTUDDN_NguyenMinhDuc_21103100549_RestaurentOrder.Controllers
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            HoaDonDatMon hoaDonDatMon = db.HoaDonDatMons.Find(id);
+
+            var hoaDonDatMon = db.HoaDonDatMons.AsNoTracking().FirstOrDefault(hd => hd.MaHD == id);
+
             if (hoaDonDatMon == null)
             {
-                return HttpNotFound();
+                return HttpNotFound("Không tìm thấy hóa đơn.");
             }
+
             return View(hoaDonDatMon);
         }
 
@@ -44,8 +50,6 @@ namespace LTUDDN_NguyenMinhDuc_21103100549_RestaurentOrder.Controllers
         }
 
         // POST: HoaDonDatMons/Create
-        // To protect from overposting attacks, enable the specific properties you want to bind to, for 
-        // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
         public ActionResult Create([Bind(Include = "MaHD,MaMon,KhachHang,NgayDat,SoLuong")] HoaDonDatMon hoaDonDatMon)
@@ -54,6 +58,7 @@ namespace LTUDDN_NguyenMinhDuc_21103100549_RestaurentOrder.Controllers
             {
                 db.HoaDonDatMons.Add(hoaDonDatMon);
                 db.SaveChanges();
+                TempData["SuccessMessage"] = "Tạo mới hóa đơn thành công.";
                 return RedirectToAction("Index");
             }
 
@@ -68,18 +73,18 @@ namespace LTUDDN_NguyenMinhDuc_21103100549_RestaurentOrder.Controllers
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            HoaDonDatMon hoaDonDatMon = db.HoaDonDatMons.Find(id);
+
+            var hoaDonDatMon = db.HoaDonDatMons.Find(id);
             if (hoaDonDatMon == null)
             {
-                return HttpNotFound();
+                return HttpNotFound("Không tìm thấy hóa đơn để chỉnh sửa.");
             }
+
             ViewBag.MaMon = new SelectList(db.MonAns, "MaMon", "TenMon", hoaDonDatMon.MaMon);
             return View(hoaDonDatMon);
         }
 
         // POST: HoaDonDatMons/Edit/5
-        // To protect from overposting attacks, enable the specific properties you want to bind to, for 
-        // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
         public ActionResult Edit([Bind(Include = "MaHD,MaMon,KhachHang,NgayDat,SoLuong")] HoaDonDatMon hoaDonDatMon)
@@ -88,8 +93,10 @@ namespace LTUDDN_NguyenMinhDuc_21103100549_RestaurentOrder.Controllers
             {
                 db.Entry(hoaDonDatMon).State = EntityState.Modified;
                 db.SaveChanges();
+                TempData["SuccessMessage"] = "Cập nhật hóa đơn thành công.";
                 return RedirectToAction("Index");
             }
+
             ViewBag.MaMon = new SelectList(db.MonAns, "MaMon", "TenMon", hoaDonDatMon.MaMon);
             return View(hoaDonDatMon);
         }
@@ -101,11 +108,13 @@ namespace LTUDDN_NguyenMinhDuc_21103100549_RestaurentOrder.Controllers
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            HoaDonDatMon hoaDonDatMon = db.HoaDonDatMons.Find(id);
+
+            var hoaDonDatMon = db.HoaDonDatMons.Find(id);
             if (hoaDonDatMon == null)
             {
-                return HttpNotFound();
+                return HttpNotFound("Không tìm thấy hóa đơn để xóa.");
             }
+
             return View(hoaDonDatMon);
         }
 
@@ -114,9 +123,19 @@ namespace LTUDDN_NguyenMinhDuc_21103100549_RestaurentOrder.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult DeleteConfirmed(int id)
         {
-            HoaDonDatMon hoaDonDatMon = db.HoaDonDatMons.Find(id);
-            db.HoaDonDatMons.Remove(hoaDonDatMon);
-            db.SaveChanges();
+            var hoaDonDatMon = db.HoaDonDatMons.Find(id);
+
+            if (hoaDonDatMon != null)
+            {
+                db.HoaDonDatMons.Remove(hoaDonDatMon);
+                db.SaveChanges();
+                TempData["SuccessMessage"] = "Xóa hóa đơn thành công.";
+            }
+            else
+            {
+                TempData["ErrorMessage"] = "Không thể xóa hóa đơn, dữ liệu không tồn tại.";
+            }
+
             return RedirectToAction("Index");
         }
 
@@ -129,16 +148,49 @@ namespace LTUDDN_NguyenMinhDuc_21103100549_RestaurentOrder.Controllers
             base.Dispose(disposing);
         }
 
-        public ActionResult Index(string searchString)
+        // GET: HoaDonDatMons
+        public ActionResult Index2(string searchString)
         {
-            var hoaDon = db.HoaDonDatMons.Include("MonAn").AsQueryable();
+            var hoaDonDatMons = from h in db.HoaDonDatMons
+                                select h;
 
-            if (!string.IsNullOrEmpty(searchString))
+            if (!String.IsNullOrEmpty(searchString))
             {
-                hoaDon = hoaDon.Where(hd => hd.KhachHang.Contains(searchString));
+                hoaDonDatMons = hoaDonDatMons.Where(h => h.KhachHang.Contains(searchString));
             }
 
-            return View(hoaDon.ToList());
+            return View(hoaDonDatMons.ToList());
         }
+
+        public ActionResult TopHoaDon()
+        {
+            // Lấy hóa đơn có tổng thành tiền cao nhất
+            var topHoaDon = db.HoaDonDatMons
+                .Join(db.MonAns,
+                      hd => hd.MaMon,
+                      ma => ma.MaMon,
+                      (hd, ma) => new
+                      {
+                          HoaDon = hd,
+                          TenMon = ma.TenMon,
+                          ThanhTien = hd.SoLuong * ma.DonGia
+                      })
+                .OrderByDescending(bill => bill.ThanhTien)
+                .FirstOrDefault();
+
+            if (topHoaDon == null)
+            {
+                return HttpNotFound("Không có hóa đơn nào.");
+            }
+
+            // Truyền dữ liệu cần thiết qua ViewBag
+            ViewBag.TenMon = topHoaDon.TenMon;
+            ViewBag.ThanhTien = topHoaDon.ThanhTien;
+
+            // Trả về view với dữ liệu hóa đơn
+            return View(topHoaDon.HoaDon);
+        }
+
     }
 }
+

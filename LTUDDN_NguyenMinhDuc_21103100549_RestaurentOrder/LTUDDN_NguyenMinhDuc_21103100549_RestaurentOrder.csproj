@@ -241,6 +241,7 @@
     <Content Include="Views\MonAns\Edit.cshtml" />
     <Content Include="Views\MonAns\Index.cshtml" />
     <Content Include="Views\MonAns\TopDoanhThu.cshtml" />
+    <Content Include="Views\HoaDonDatMons\TopHoaDon.cshtml" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>

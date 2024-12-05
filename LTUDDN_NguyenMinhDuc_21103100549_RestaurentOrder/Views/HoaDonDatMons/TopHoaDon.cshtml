@@ -1,0 +1,28 @@
+﻿@model LTUDDN_NguyenMinhDuc_21103100549_RestaurentOrder.Models.HoaDonDatMon
+
+@{
+    ViewBag.Title = "TopHoaDon";
+}
+
+<h2>Hóa Đơn Có Thành Tiền Cao Nhất</h2>
+
+<table class="table">
+    <tr>
+        <th>Mã Hóa Đơn</th>
+        <th>Ngày Đặt</th>
+        <th>Số Lượng</th>
+        <th>Tên Món</th>
+        <th>Thành Tiền</th>
+    </tr>
+    <tr>
+        <td>@Model.MaHD</td>
+        <td>@Model.NgayDat.ToString("dd/MM/yyyy")</td>
+        <td>@Model.SoLuong</td>
+        <td>@ViewBag.TenMon</td>
+        <td>@ViewBag.ThanhTien.ToString("N0") VND</td>
+    </tr>
+</table>
+
+<p>
+    @Html.ActionLink("Quay lại danh sách", "Index", null, new { @class = "btn btn-primary" })
+</p>
