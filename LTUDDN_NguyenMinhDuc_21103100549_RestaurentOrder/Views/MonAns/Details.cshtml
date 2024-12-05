@@ -1,0 +1,50 @@
+﻿@model LTUDDN_NguyenMinhDuc_21103100549_RestaurentOrder.Models.MonAn
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>MonAn</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.TenMon)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TenMon)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.LoaiMon)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.LoaiMon)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DonGia)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DonGia)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SoLuongTon)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SoLuongTon)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.MaMon }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

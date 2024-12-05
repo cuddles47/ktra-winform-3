@@ -1,0 +1,48 @@
+﻿@model IEnumerable<LTUDDN_NguyenMinhDuc_21103100549_RestaurentOrder.Models.MonAn>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>Mã Món</th>
+        <th>Tên Món</th>
+        <th>Loại Món</th>
+        <th>Đơn Giá</th>
+        <th>Số Lượng Tồn</th>
+        <th>Hành Động</th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.MaMon)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TenMon)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.LoaiMon)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DonGia)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.SoLuongTon)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id = item.MaMon }) |
+            @Html.ActionLink("Details", "Details", new { id = item.MaMon }) |
+            @Html.ActionLink("Delete", "Delete", new { id = item.MaMon })
+        </td>
+    </tr>
+}
+
+</table>
+

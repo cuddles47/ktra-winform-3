@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="QLHDModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="HoaDonDatMon">
+    <Key>
+      <PropertyRef Name="MaHD" />
+    </Key>
+    <Property Name="MaHD" Type="int" Nullable="false" />
+    <Property Name="MaMon" Type="int" Nullable="false" />
+    <Property Name="KhachHang" Type="nvarchar" MaxLength="50" />
+    <Property Name="NgayDat" Type="datetime" Nullable="false" />
+    <Property Name="SoLuong" Type="int" />
+  </EntityType>
+  <EntityType Name="MonAn">
+    <Key>
+      <PropertyRef Name="MaMon" />
+    </Key>
+    <Property Name="MaMon" Type="int" Nullable="false" />
+    <Property Name="TenMon" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="LoaiMon" Type="nvarchar" MaxLength="30" Nullable="false" />
+    <Property Name="DonGia" Type="decimal" Precision="10" Scale="2" />
+    <Property Name="SoLuongTon" Type="int" />
+  </EntityType>
+  <Association Name="FK__HoaDonDat__MaMon__3C69FB99">
+    <End Role="MonAn" Type="Self.MonAn" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="HoaDonDatMon" Type="Self.HoaDonDatMon" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MonAn">
+        <PropertyRef Name="MaMon" />
+      </Principal>
+      <Dependent Role="HoaDonDatMon">
+        <PropertyRef Name="MaMon" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="QLHDModelStoreContainer">
+    <EntitySet Name="HoaDonDatMon" EntityType="Self.HoaDonDatMon" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="MonAn" EntityType="Self.MonAn" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK__HoaDonDat__MaMon__3C69FB99" Association="Self.FK__HoaDonDat__MaMon__3C69FB99">
+      <End Role="MonAn" EntitySet="MonAn" />
+      <End Role="HoaDonDatMon" EntitySet="HoaDonDatMon" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

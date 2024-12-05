@@ -1,0 +1,53 @@
+﻿@model IEnumerable<LTUDDN_NguyenMinhDuc_21103100549_RestaurentOrder.Models.HoaDonDatMon>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+@using (Html.BeginForm("Index", "HoaDonDatMon", FormMethod.Get))
+{
+    <input type="text" name="searchString" placeholder="Tìm theo khách hàng" class="form-control" />
+    <button type="submit" class="btn btn-primary">Tìm kiếm</button>
+}
+<table class="table">
+    <tr>
+        <th>Mã Hóa Đơn</th>
+        <th>Tên Khách Hàng</th>
+        <th>Ngày Đặt</th>
+        <th>Số Lượng</th>
+        <th>Thành Tiền</th>
+        <th>Hành Động</th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.KhachHang)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.NgayDat)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.SoLuong)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.MonAn.TenMon)
+            </td>
+            <td>
+                @(item.SoLuong * item.MonAn.DonGia)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { id = item.MaHD }) |
+                @Html.ActionLink("Details", "Details", new { id = item.MaHD }) |
+                @Html.ActionLink("Delete", "Delete", new { id = item.MaHD })
+            </td>
+        </tr>
+    }
+
+</table>

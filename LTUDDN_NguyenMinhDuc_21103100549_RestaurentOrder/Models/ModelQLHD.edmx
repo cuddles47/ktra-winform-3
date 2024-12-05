@@ -1,0 +1,150 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="QLHDModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="HoaDonDatMon">
+          <Key>
+            <PropertyRef Name="MaHD" />
+          </Key>
+          <Property Name="MaHD" Type="int" Nullable="false" />
+          <Property Name="MaMon" Type="int" Nullable="false" />
+          <Property Name="KhachHang" Type="nvarchar" MaxLength="50" />
+          <Property Name="NgayDat" Type="datetime" Nullable="false" />
+          <Property Name="SoLuong" Type="int" />
+        </EntityType>
+        <EntityType Name="MonAn">
+          <Key>
+            <PropertyRef Name="MaMon" />
+          </Key>
+          <Property Name="MaMon" Type="int" Nullable="false" />
+          <Property Name="TenMon" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="LoaiMon" Type="nvarchar" MaxLength="30" Nullable="false" />
+          <Property Name="DonGia" Type="decimal" Precision="10" Scale="2" />
+          <Property Name="SoLuongTon" Type="int" />
+        </EntityType>
+        <Association Name="FK__HoaDonDat__MaMon__3C69FB99">
+          <End Role="MonAn" Type="Self.MonAn" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="HoaDonDatMon" Type="Self.HoaDonDatMon" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="MonAn">
+              <PropertyRef Name="MaMon" />
+            </Principal>
+            <Dependent Role="HoaDonDatMon">
+              <PropertyRef Name="MaMon" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="QLHDModelStoreContainer">
+          <EntitySet Name="HoaDonDatMon" EntityType="Self.HoaDonDatMon" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="MonAn" EntityType="Self.MonAn" Schema="dbo" store:Type="Tables" />
+          <AssociationSet Name="FK__HoaDonDat__MaMon__3C69FB99" Association="Self.FK__HoaDonDat__MaMon__3C69FB99">
+            <End Role="MonAn" EntitySet="MonAn" />
+            <End Role="HoaDonDatMon" EntitySet="HoaDonDatMon" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="QLHDModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="HoaDonDatMon">
+          <Key>
+            <PropertyRef Name="MaHD" />
+          </Key>
+          <Property Name="MaHD" Type="Int32" Nullable="false" />
+          <Property Name="MaMon" Type="Int32" Nullable="false" />
+          <Property Name="KhachHang" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="NgayDat" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="SoLuong" Type="Int32" />
+          <NavigationProperty Name="MonAn" Relationship="Self.FK__HoaDonDat__MaMon__3C69FB99" FromRole="HoaDonDatMon" ToRole="MonAn" />
+        </EntityType>
+        <EntityType Name="MonAn">
+          <Key>
+            <PropertyRef Name="MaMon" />
+          </Key>
+          <Property Name="MaMon" Type="Int32" Nullable="false" />
+          <Property Name="TenMon" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="LoaiMon" Type="String" MaxLength="30" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="DonGia" Type="Decimal" Precision="10" Scale="2" />
+          <Property Name="SoLuongTon" Type="Int32" />
+          <NavigationProperty Name="HoaDonDatMons" Relationship="Self.FK__HoaDonDat__MaMon__3C69FB99" FromRole="MonAn" ToRole="HoaDonDatMon" />
+        </EntityType>
+        <Association Name="FK__HoaDonDat__MaMon__3C69FB99">
+          <End Role="MonAn" Type="Self.MonAn" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="HoaDonDatMon" Type="Self.HoaDonDatMon" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="MonAn">
+              <PropertyRef Name="MaMon" />
+            </Principal>
+            <Dependent Role="HoaDonDatMon">
+              <PropertyRef Name="MaMon" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="QLHDDataContext" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="HoaDonDatMons" EntityType="Self.HoaDonDatMon" />
+          <EntitySet Name="MonAns" EntityType="Self.MonAn" />
+          <AssociationSet Name="FK__HoaDonDat__MaMon__3C69FB99" Association="Self.FK__HoaDonDat__MaMon__3C69FB99">
+            <End Role="MonAn" EntitySet="MonAns" />
+            <End Role="HoaDonDatMon" EntitySet="HoaDonDatMons" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="QLHDModelStoreContainer" CdmEntityContainer="QLHDDataContext">
+          <EntitySetMapping Name="HoaDonDatMons">
+            <EntityTypeMapping TypeName="QLHDModel.HoaDonDatMon">
+              <MappingFragment StoreEntitySet="HoaDonDatMon">
+                <ScalarProperty Name="MaHD" ColumnName="MaHD" />
+                <ScalarProperty Name="MaMon" ColumnName="MaMon" />
+                <ScalarProperty Name="KhachHang" ColumnName="KhachHang" />
+                <ScalarProperty Name="NgayDat" ColumnName="NgayDat" />
+                <ScalarProperty Name="SoLuong" ColumnName="SoLuong" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="MonAns">
+            <EntityTypeMapping TypeName="QLHDModel.MonAn">
+              <MappingFragment StoreEntitySet="MonAn">
+                <ScalarProperty Name="MaMon" ColumnName="MaMon" />
+                <ScalarProperty Name="TenMon" ColumnName="TenMon" />
+                <ScalarProperty Name="LoaiMon" ColumnName="LoaiMon" />
+                <ScalarProperty Name="DonGia" ColumnName="DonGia" />
+                <ScalarProperty Name="SoLuongTon" ColumnName="SoLuongTon" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>
